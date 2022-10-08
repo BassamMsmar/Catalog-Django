@@ -17,6 +17,10 @@
             <p class="card-text text-left">{{ item.description_product}}</p>
             <a href="#" class="btn btn-primary text-center">التفاصيل</a>
             <a href="{% url 'edit_product' item.id%}" class="btn btn-primary text-center">تعديل</a>
+            <a href="{% url 'add_to_cart' item.id%}" class="btn btn-primary text-center">اضافة للعربة</a>
+
+
+
           </div>
       </div>
     </div>

@@ -40,11 +40,11 @@ def edit_product(request, pk):
 
             if form.is_valid():
                 form.save()
-                return redirect('products_list')
+                return redirect('sections_list')
         else:
                 form = AddProductForm(instance=prducts)
     
         context={'form':form}
-        return render (request, 'products/add_product.html', context)
+        return render (request, 'products/add_edit_product.html', context)
     else:
         return redirect('sections_list')
